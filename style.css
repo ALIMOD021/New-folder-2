@@ -545,117 +545,81 @@ span {
     }
 }
 
-
-/* Field-of-Study-div codes */
-.field-h2-box{
-    display: flex;
-    justify-content: center;
+/* field of study styles */
+.field-of-study-section-box>.container {
+    max-width: 100%;
 }
-.field-h2 {
-    font-size: 32px;
+
+.field-of-study-main-items-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    padding: 4rem;
+}
+
+.field-of-study-item-box {
+    padding: 2rem;
     position: relative;
-    transition: all ease-in-out 500ms;
-}
-.field-h2:hover {
-    letter-spacing: 10px;
-}
-
-.field-h2::before {
-    content: '';
-    display: block;
-    width: 100%;
-    border-top: solid black 2px;
-    position: absolute;
-}
-.field-h2::after {
-    content: '';
-    display: block;
-    width: 100%;
-    border-bottom: solid black 2px;
-    position: absolute;
-}
-
-.Field-of-Study-section>.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 80%;
-    gap: 2rem;
-    height: 70vh;
-}
-
-.Field-of-Study-section>.container>div {
-    transition: all ease-in-out 500ms;
-}
-
-.Field-of-Study-section>.container>div:hover {
-    transform: translateY(-40px);
-}
-
-.computer,
-.Building,
-.mechanics,
-.Accounting {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 3rem;
-    position: relative;
-    gap: 2rem;
-    border-radius: 2rem;
+    justify-content: center;
     text-align: center;
+    gap: 2rem;
+    border-radius: 12px;
+    transition: all ease 200ms;
+}
+
+.field-of-study-item-box:hover {
+    transform: translatey(-20px);
 }
 
 .computer {
     background-color: #19C0EF;
 }
 
-.Building {
-    background-color: #DFB28B;
+.architect {
+    background-color: #FF826E;
 }
 
-.mechanics {
-    background-color: #DD636E;
-}
-
-.Accounting {
+.accounting {
     background-color: #3F5295;
 }
 
-.Field-of-Study-logo-box {
-    width: 90px;
+.mechanic {
+    background-color: #DD636E;
+}
+
+.field-of-study-text,
+.field-of-study-more-information-link,
+.field-of-study-title-item {
+    color: white;
+}
+
+.field-of-study-logo-box {
+    width: 80px;
     position: absolute;
     top: -50px;
     background-color: #fff;
-    padding: 7px 10px;
+    padding: 10px 14px;
     border-radius: 100%;
     box-shadow: 0 0 16px black;
 }
 
-.Field-of-Study-logo {
+.field-of-study-logo {
     width: 100%;
 }
-
-.Field-of-Study-title {
-    color: white;
-}
-
-.Field-of-Study-text-box {
-    color: white;
-}
-
-.more-information-link {
-    color: white;
+.field-of-study-more-information-link{
+    background-color: transparent;
     border: solid white 2px;
-    padding: 10px 12px;
+    padding: 1rem;
     border-radius: 12px;
+    transition: all ease 200ms;
 }
-.more-information-link:hover {
-    background-color: white;
+.field-of-study-more-information-link:hover{
+    background-color: #fff;
     color: black;
 }
-
 /* animation */
 @keyframes header-opnner {
     0% {
