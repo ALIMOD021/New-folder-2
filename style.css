@@ -610,17 +610,40 @@ span {
 .field-of-study-logo {
     width: 100%;
 }
-.field-of-study-more-information-link{
+
+.field-of-study-more-information-link {
     background-color: transparent;
     border: solid white 2px;
     padding: 1rem;
     border-radius: 12px;
     transition: all ease 200ms;
 }
-.field-of-study-more-information-link:hover{
+
+.field-of-study-more-information-link:hover {
     background-color: #fff;
     color: black;
 }
+
+/* field-of-study responsive */
+@media screen and (max-width:1379px) {
+    .field-of-study-main-items-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:662px) {
+    .field-of-study-main-items-box {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:304px) {
+    .field-of-study-main-items-box {
+        padding: 0.5rem;
+    }
+}
+
 /* animation */
 @keyframes header-opnner {
     0% {
